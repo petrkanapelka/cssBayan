@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>cssBayan</title>
 </head>
 <body>
-    <header>
-        <h1>cssBayan</h1>
+    <header class="header">
+        <h1 class="header-title">cssBayan</h1>
     </header>
+
+    <main class="main">
+        <div class="accordions">
+            <div class="accordion">
+              <input type="radio" id="accordion1" name="input" checked>
+              <label class="accordion-label" for="accordion1">Error on line 144?</label>
+              <div class="accordion-content error-meme"></div>
+            </div>
+            <div class="accordion">
+              <input type="radio" id="accordion2" name="input">
+              <label class="accordion-label" for="accordion2">Am I a good programming?</label>
+              <div class="accordion-content programming-meme"></div>
+            </div>
+            <div class="accordion">
+                <input type="radio" id="accordion3" name="input">
+                <label class="accordion-label" for="accordion3">Java...?Javascipt</label>
+                <div class="accordion-content js-meme"></div>
+              </div>
+              <div class="accordion">
+                <input type="radio" id="accordion4" name="input">
+                <label class="accordion-label" for="accordion4">Kids coding</label>
+                <div class="accordion-content kids-meme"></div>
+              </div>
+    </main>
+
 </body>
 </html>
