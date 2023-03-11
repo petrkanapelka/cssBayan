@@ -18,6 +18,9 @@ input {
     z-index: -1
 }
 .accordions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     min-width: 75vw;
     border-radius: 8px;
@@ -27,6 +30,11 @@ input {
 .accordion {
     color: blue;
     padding: 0 1%;
+    width: 95%;
+    border-top: 2px solid #333;
+}
+.accordion:nth-child(1){
+    border-top:none;
 }
 .label-wrapper {
     display: flex;
@@ -34,8 +42,6 @@ input {
     width: 100%;
     height: 100%;
     cursor: pointer;
-    border-top: 2px;
-    border-color: rgb(5, 93, 182);
 }
 
 .accordion-label {
@@ -54,12 +60,12 @@ input {
     align-items:center;
     width: 5%;
     opacity: 0;
-    transition: all .35s
+    transition: all .5s
 }
 .img {
     display: block;
     width: 70%;
-    transition: all .35s;
+    transition: all .5s;
 }
 .accordions:hover .label-wrapper .label-icon {
     opacity: 1;
@@ -71,14 +77,12 @@ input {
 .label-wrapper:hover~.accordion-content {
     padding: 10em 0;
 }
-/* .label-wrapper:hover .label-icon{
-    transform: rotate(45deg);
-} */
 .accordion:hover .accordion-content {
     padding: 10em 0;
 }
 .accordion:hover .label-wrapper .label-icon{
     transform: rotate(45deg);
+    transition: all .5s
 }
 .accordion-content {
     max-height: 0em;
@@ -86,7 +90,7 @@ input {
     background-repeat: no-repeat;
     background-size:auto 100%;
     background-position: center;
-    transition: all .35s
+    transition: all .5s
 }
 .error-meme {
     background-image: url('../img/Error.jpg');
@@ -106,6 +110,7 @@ input:checked~.label-wrapper {
 
 input:checked~.accordion-label .label-wrapper .label-icon {
     transform: rotate(45deg);
+    transition: all .5s
 }
 
 input:checked~.accordion-label .accordion-content {
