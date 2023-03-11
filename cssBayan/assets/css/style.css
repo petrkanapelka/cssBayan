@@ -33,6 +33,9 @@ input {
     justify-content: space-between;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    border-top: 2px;
+    border-color: rgb(5, 93, 182);
 }
 
 .accordion-label {
@@ -41,26 +44,33 @@ input {
     padding: 1em;
     background: #fff;
     font-weight: bold;
-    cursor: pointer
+    cursor: pointer;
+    width:95%;
 }
 .label-icon {
     display: flex;
     justify-content: flex-end;
     align-items:center;
-    width: 50%;
+    width: 5%;
     transition: all .35s
 }
 .img {
     display: block;
-    width: 6%;
-    transition: all .35s
+    width: 70%;
+    transition: all .35s;
 }
 
-.accordion-label:hover~.accordion-content {
+.label-wrapper:hover~.accordion-content {
     padding: 10em 0;
+}
+.label-wrapper:hover .label-icon{
+    transform: rotate(45deg);
 }
 .accordion-content:hover {
     padding: 10em 0;
+}
+.accordion:hover .label-wrapper .label-icon{
+    transform: rotate(45deg);
 }
 .accordion-content {
     max-height: 0em;
@@ -82,16 +92,17 @@ input {
 .kids-meme {
     background-image: url('../img/kids.webp');
 }
-
-
 input:checked~.label-wrapper {
     color:black;
 }
 
-input:checked~.label-icon {
-    transform: rotate(45deg)
+input:checked~.label-wrapper .label-icon {
+    transform: rotate(45deg);
 }
 
 input:checked~.accordion-content {
     padding: 10em 0;
 }
+
+
+
