@@ -27,15 +27,15 @@ input {
     align-items: center;
     justify-content: center;
     min-width: 75vw;
-    border-radius: 8px;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .5)
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(0, 0, 0, .5)
 }
 
 .accordion {
     color: blue;
     padding: 0 1%;
     width: 95%;
-    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    border-top: 0.15em solid rgba(0, 0, 0, 0.5);
 }
 .accordion:nth-child(1){
     border-top:none;
