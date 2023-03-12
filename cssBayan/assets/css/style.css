@@ -6,12 +6,16 @@ body {
     align-items: center;
     font-size: 1.6rem;
 }
+header {
+    min-width: 75vw;
+}
 
 h1 {
-    margin: 0;
+    margin: 0 2%;
     line-height: 2;
-    text-align: center;
+    text-align: left;
     font-size: 3.2rem;
+    align-self: flex-start;
 }
 
 input {
@@ -57,16 +61,11 @@ input {
 }
 .label-icon {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items:center;
     width: 5%;
     opacity: 0;
     transition: all .5s
-}
-.img {
-    display: block;
-    width: 70%;
-    transition: all .5s;
 }
 .accordion-content {
     max-height: 0em;
@@ -88,6 +87,12 @@ input {
 .accordion:hover .label-wrapper .label-icon{
     transform: rotate(45deg);
     transition: all .5s
+}
+.accordion-label:active{
+    color:blue;
+}
+.accordion-label:active{
+    color:blue;
 }
 .error-meme {
     background-image: url('../img/Error.jpg');
