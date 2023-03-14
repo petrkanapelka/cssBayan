@@ -71,7 +71,7 @@ input {
     background-repeat: no-repeat;
     background-size:auto 100%;
     background-position: center;
-    transition: all .5s
+    transition: all .6s
 }
 .accordions:hover .label-wrapper .label-icon {
     opacity: 1;
